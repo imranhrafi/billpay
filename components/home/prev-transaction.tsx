@@ -50,7 +50,7 @@ export default function PreviousTransaction() {
                   </div>
                 ) : (
                   <div className='grid w-12 h-12 p-2 font-bold text-white bg-green-500 rounded-md place-items-center'>
-                    <TrendingDown className='' />
+                    <TrendingUp className='' />
                   </div>
                 )}
               </TableCell>
