@@ -10,4 +10,7 @@ export type SidebarItemProps = {
     amount: number;
     status: "pending" | "processing" | "success" | "failed";
     email: string;
+    date: string;
+    [key: string]: any;
+    recipient: string;
   };

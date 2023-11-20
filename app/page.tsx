@@ -5,11 +5,11 @@ import OutcomeChart from "../components/home/OutcomeChart";
 import LimitProgressBar from "../components/home/LimitProgressBar";
 import TransactionOverview from "../components/home/BarChart";
 import Spending from "../components/home/Spending";
-import LatestInvoices from "../components/home/invoice-table/LatestInvoices";
-
+import Invoices from "../components/home/invoice-table/invoices";
+import PreviousTransaction from "../components/home/prev-transaction";
 export default function Page() {
   return (
-    <section className='px-4 md:px-0'>
+    <section className='px-4 md:px-4 '>
       {/* TOP ROW */}
       <div className='flex flex-col items-center gap-8 lg:flex-row'>
         <div className='w-full lg:flex-1'>
@@ -46,12 +46,12 @@ export default function Page() {
           </Card>
         </div>
         <div className='flex flex-col w-full gap-8 md:flex-row lg:flex-1'>
-          <div className='flex-1'>
+          <Card className='flex-1 p-8'>
             <IncomeChart />
-          </div>
-          <div className='flex-1'>
+          </Card>
+          <Card className='flex-1 p-8'>
             <OutcomeChart />
-          </div>
+          </Card>
         </div>
         <div className=''>
           <Card className='h-[264px] p-4 md:p-8'>
@@ -76,7 +76,14 @@ export default function Page() {
           <Spending />
         </div>
       </div>
-      <LatestInvoices />
+      <div className='grid w-full grid-cols-1 gap-12 mt-14 lg:grid-cols-2'>
+        <div className='w-full '>
+          <Invoices />
+        </div>
+        <div className='w-full '>
+          <PreviousTransaction />
+        </div>
+      </div>
     </section>
   );
 }
