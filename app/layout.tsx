@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${nunito.className} flex h-full bg-background gap-12 lg:w-[1920px] lg:mx-auto `}
+        className={`${nunito.className} flex h-full bg-background lg:max-w-[1920px] lg:mx-auto overflow-x-hidden`}
       >
         <aside className='overflow-x-hidden  hidden w-[260px] h-screen text-sm font-bold  lg:block  z-10'>
           <Sidebar />

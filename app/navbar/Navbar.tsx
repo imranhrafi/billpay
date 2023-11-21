@@ -21,7 +21,7 @@ export default function Navbar() {
 
       <div className='relative flex-1 hidden w-full md:block'>
         <Input
-          className='pl-10 border-0 rounded-full md:h-10 lg:h-16'
+          className='pl-10 border-0 rounded-full md:h-10 lg:h-16 bg-card'
           placeholder='Search'
         />
         <Search
