@@ -62,7 +62,7 @@ const sidebarData = [
 
 export default function Sidebar() {
   return (
-    <div className=''>
+    <div className='fixed h-screen bg-card'>
       <div className='flex items-center px-12 py-12 mb-12 space-x-3 items-'>
         <Image src='/logo.svg' alt='logo' width={32} height={32} />
         <h1 className='text-3xl'>Billpay</h1>

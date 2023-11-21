@@ -22,12 +22,13 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${nunito.className} flex h-screen bg-background gap-12`}
+        className={`${nunito.className} flex h-full bg-background gap-12 lg:w-[1920px] lg:mx-auto `}
       >
-        <aside className='hidden text-sm font-bold bg-card lg:block'>
+        <aside className='overflow-x-hidden  hidden w-[260px] h-screen text-sm font-bold  lg:block  z-10'>
           <Sidebar />
         </aside>
-        <div className='flex-1 '>
+
+        <div className='flex flex-col flex-1 ml-auto '>
           <nav className='mt-2 ml-12 md:mt-6'>
             <Navbar />
           </nav>
